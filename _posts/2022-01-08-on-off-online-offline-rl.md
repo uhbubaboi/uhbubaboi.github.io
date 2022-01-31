@@ -8,6 +8,7 @@ tags:
     - off-poliyc
     - online reinforcement learning
     - offline reinforcement learning
+use_math: true
 comments: true
 ---
 
