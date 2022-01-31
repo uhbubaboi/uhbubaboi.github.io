@@ -1,5 +1,4 @@
 ---
-layout: posts
 title: What is the definition of continuity?
 category: math
 tags:

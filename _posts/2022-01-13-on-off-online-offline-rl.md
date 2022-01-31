@@ -1,5 +1,4 @@
 ---
-layout: posts
 title: on- and off-policy? online and offline reinforcement learning?
 category: machine-learning
 tags: 
@@ -18,12 +17,11 @@ For those who are first learning reinforcement learning, the term on-policy and 
 
 The term on-policy, at least to me, seems to be created simply due to the fact that policy gradient theorem relies on the gradient of the current policy. More specifically, let the reward function be defined as 
 
-$J(\theta) = \sum_{s \in \mathcal{S}} d_{\pi_\theta}(s) V^{\pi_\theta}(s) = \sum_{s \in \mathcal{S}} d_{\pi_\theta}(s) \sum_{a \in \mathcal{A}} \pi_\theta(a \mid s) Q^{\pi_\theta}(s,a)$
+$$J(\theta) = \sum_{s \in \mathcal{S}} d_{\pi_\theta}(s) V^{\pi_\theta}(s) = \sum_{s \in \mathcal{S}} d_{\pi_\theta}(s) \sum_{a \in \mathcal{A}} \pi_\theta(a \mid s) Q^{\pi_\theta}(s,a) \tag{1}$$
 
 where $d_{\pi}(s)$ is the stationary distribution of Markov chain for $\pi$. The gradient $\nabla_\theta J(\theta)$ is difficult to compute since both $d_{\pi_\theta}$ and $\pi_\theta$ are dependent on $\theta$. The key idea of policy gradient is that there is a way to reformulate the derivative of $\nabla_\theta J(\theta)$ such that we do not have to solve $\nabla_\theta d_{\pi_\theta}$ and get the following gradient:
 
-$\nabla_\theta J(\theta) = \nabla_\theta \sum_{s \in \mathcal{S}} d_{\pi_\theta}(s) \sum_{a \in \mathcal{A}} Q^{\pi_\theta}(s,a) \pi_\theta(a \mid s)$ 
-$\quad \quad \quad \quad \propto \sum_{s \in \mathcal{S}} d_{\pi_\theta}(s) \sum_{a \in \mathcal{A}} Q^{\pi_\theta}(s,a) \nabla_\theta \pi_\theta(a \mid s)$
+$$\begin{align*}\nabla_\theta J(\theta) &= \nabla_\theta \sum_{s \in \mathcal{S}} d_{\pi_\theta}(s) \sum_{a \in \mathcal{A}} Q^{\pi_\theta}(s,a) \pi_\theta(a \mid s)\\&\propto \sum_{s \in \mathcal{S}} d_{\pi_\theta}(s) \sum_{a \in \mathcal{A}} Q^{\pi_\theta}(s,a) \nabla_\theta \pi_\theta(a \mid s)\end{align*} \tag{2}$$
 
 If you listen to someone working on reinforcement learning, you often hear them say on-policy reinforcement learning is not data efficient. Again, this is due to the fact that policy gradient requires the gradient from the current policy. Observing the equation above, one can easily see that the gradient $\nabla_\theta J(\theta)$ is a function of $\pi_\theta$. Once we update the policy, we can’t use the gradient from the dataset (i.e. sampled trajectory) we have collected from the past policy. That’s why on every update, we throw away the collected dataset and collect a new one from our newly updated policy.
 

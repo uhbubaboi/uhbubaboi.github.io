@@ -1,6 +1,5 @@
 ---
-layout: posts
-title: What is a "small" set - measuare theoretic and topological approach
+title: What is a "small" set - measure theoretic and topological approach
 category: math
 tags: 
     - measure theory
