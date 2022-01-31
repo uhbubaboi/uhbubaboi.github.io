@@ -1,12 +1,17 @@
 # main links
 main:
   - title: "math"
-    url: /math/
+    url: /categories/math/
     description: "math stuff"
+  #- title: "machine learning"
+  #  url: /categories/machine-learning/
+  #  description: "machine learning stuff"
+  #- title: "data science"
+  #  url: /categories/data-science/
+  #  description: "data sciency stuff"
+  #- title: "finance"
+  #  url: /categories/finance/
+  #  description: "finance stuff"
   - title: "about"
     url: /about/
     description: "me"
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
