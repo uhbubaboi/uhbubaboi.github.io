@@ -23,6 +23,17 @@ If you modify your `Gemfile`, run
 bundle exec jekyll serve
 ```
 
+### Setting up mathjax support
 To enable `mathjax` support for you jekyll website, follow the instruction [here](https://benlansdell.github.io/computing/mathjax/).
+
+### Bloggin with jupyter notebooks
+To embed your jupyter notebook on your jekyll website, follow the tutorial [here](https://cduvallet.github.io/posts/2018/03/ipython-notebooks-jekyll).
+Just in case the link is down, here is what you should do:
+1. Write the jupyter notebook in the `_jupyter` folder
+2. When it's finished, `jupyter nbconvert <nb> --to markdown`
+3. Move it to the `_posts` folder
+4. Move the images to the `images` folder
+5. Add `/images/` to all iamge paths in the markdown file
+
 
 For now I'm gonna see how long I can blog consistently. If this works out, maybe I'll branch out to creating videos on youtube!

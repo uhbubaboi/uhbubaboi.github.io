@@ -4,7 +4,7 @@ title: What is the definition of continuity?
 category: math
 tags:
     - continuous
-use_math: true
+mathjax: true
 comments: true
 ---
 When I first studied real analysis, the definition of continuity was clear but there were just so many of them. I took some time to list as many definition of continuity as I could, and provide some observations on why we need so many definitions and how they are different. 
@@ -53,7 +53,7 @@ There’s even more definition of continuity:
 > **(Lipschitz continuity)** Given two metric spaces $(X, d_X)$ and $(Y, d_Y)$, a function $f: X \to Y$ is Lipschitz continuous if there exists a real constant $K \ge 0$  such that for all $x_1$ and $x_2$ in $X$,
 > 
 > 
-> $\qquad \qquad d_Y(f(x_1), f(x_2)) \le Kd_X(x_1, x_2)$
+> $$ d_Y(f(x_1), f(x_2)) \le Kd_X(x_1, x_2) $$
 > 
 > Any such $K$  is called a Lipschitz constant for the function $f$. 
 > **(Remark: note that Lipschitz continuity is a global property)** .
@@ -64,7 +64,7 @@ There’s even more definition of continuity:
 > **($\alpha$-Holder condition)** Given two metric spaces $(X, d_X)$  and $(Y, d_Y)$, a function $f: X \to Y$ satisfies $\alpha$-Holder condition (or $\alpha$-Holder continuous) if there exists $C_\alpha$ such that
 > 
 > 
-> $\qquad d_Y(f(x), f(x')) \le C_\alpha d_X(x, x') \; \forall x,x' \in X$
+> $$d_Y(f(x), f(x')) \le C_\alpha d_X(x, x') \; \forall x,x' \in X$$
 > 
 > **(Remark: note that Holder condition is a global property)** .
 > 
