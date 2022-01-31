@@ -6,12 +6,12 @@ main:
   - title: "machine learning"
     url: /categories/machine-learning/
     description: "reinforcement learning, generative models, etc"
-  #- title: "data science"
-  #  url: /categories/data-science/
-  #  description: "data sciency stuff"
-  #- title: "finance"
-  #  url: /categories/finance/
-  #  description: "finance stuff"
+  - title: "data science"
+    url: /categories/data-science/
+    description: "data sciency stuff"
+  - title: "finance"
+    url: /categories/finance/
+    description: "finance stuff"
   - title: "about"
     url: /about/
     description: "me"
