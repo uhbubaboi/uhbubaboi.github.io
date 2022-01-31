@@ -5,6 +5,7 @@ category: math
 tags:
     - continuous
 use_math: true
+comments: true
 ---
 When I first studied real analysis, the definition of continuity was clear but there were just so many of them. I took some time to list as many definition of continuity as I could, and provide some observations on why we need so many definitions and how they are different. 
 

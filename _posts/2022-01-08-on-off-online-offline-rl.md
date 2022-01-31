@@ -8,8 +8,8 @@ tags:
     - off-poliyc
     - online reinforcement learning
     - offline reinforcement learning
-use_math: true
 comments: true
+use_math: true
 ---
 
 For those who are first learning reinforcement learning, the term on-policy and off-policy (and offline learning) can be quite daunting (and mostly annoying). Here we outline what they mean, how they are different, and how conceptually simple they are. 
