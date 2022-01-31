@@ -32,8 +32,6 @@ Just in case the link is down, here is what you should do:
 1. Write the jupyter notebook in the `_jupyter` folder
 2. When it's finished, `jupyter nbconvert <nb> --to markdown`
 3. Move it to the `_posts` folder
-4. Move the images to the `images` folder
-5. Add `/images/` to all iamge paths in the markdown file
 
 
 For now I'm gonna see how long I can blog consistently. If this works out, maybe I'll branch out to creating videos on youtube!
