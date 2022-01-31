@@ -2,10 +2,10 @@
 main:
   - title: "math"
     url: /categories/math/
-    description: "math stuff"
-  #- title: "machine learning"
-  #  url: /categories/machine-learning/
-  #  description: "machine learning stuff"
+    description: "linear algebra, real analysis, functional analysis, etc"
+  - title: "machine learning"
+    url: /categories/machine-learning/
+    description: "reinforcement learning, generative models, etc"
   #- title: "data science"
   #  url: /categories/data-science/
   #  description: "data sciency stuff"
