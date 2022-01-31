@@ -9,13 +9,13 @@ tags:
 use_math: true
 comments: true
 ---
+The notion of “smallness” in measure theory is pretty clear - when the set has measure $0$, then we can treat is as a small set, or a set with no mass. This is intuitive if we use a Lebesgue measure, but for other measures or distributions, this is not always the case. Take the Gaussian distribution for instance. The standard Gaussian distribution has almost no mass in $[c, \infty)$  for some sufficiently large $c$. However, if we use Lebesgue measure, it has infinite mass. So the idea of “smallness” is dependent on the measure we are using. A more dramatic example is the dirac delta measure. It has a point mass at 0 and the rest has measure 0. Is there a more general way to define “smallness” without dependence on any specific measure?
 
 <figure>
   <img src="/assets/images/measure_dependent_smallness.png"/>
   <figcaption>Notion of smallness depends on the measure we are using!</figcaption>
 </figure>
 
-The notion of “smallness” in measure theory is pretty clear - when the set has measure $0$, then we can treat is as a small set, or a set with no mass. This is intuitive if we use a Lebesgue measure, but for other measures or distributions, this is not always the case. Take the Gaussian distribution for instance. The standard Gaussian distribution has almost no mass in $[c, \infty)$  for some sufficiently large $c$. However, if we use Lebesgue measure, it has infinite mass. So the idea of “smallness” is dependent on the measure we are using. A more dramatic example is the dirac delta measure. It has a point mass at 0 and the rest has measure 0. Is there a more general way to define “smallness” without dependence on any specific measure?
 
 I introduce you to the Baire Category theorem - a topological way to define the notion of “smallness” of a set:
 
