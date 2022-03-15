@@ -20,7 +20,7 @@ title                    : "uhbubaboi"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "uhbubaboi"
-description              : "math machine-learning data-science finance"
+description              : "math, machine learning, data science, finance"
 url                      : "https://uhbubaboi.github.io/"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "uhbubaboi/uhbubaboi.github.io"
@@ -84,7 +84,7 @@ analytics:
 author:
   name             : "uhbubaboi"
   avatar           : "/assets/images/uhbubaboi.jpeg"
-  bio              : "An ex-Ph.D., lone-nut ape seeking for followers"
+  bio              : "ex-Ph.D."
   location         : 
   email            : "uhbuba.collector@gmail.com"
   links:
@@ -241,6 +241,7 @@ defaults:
       path: ""
       type: posts
     values:
+      show_date: true
       layout: single
       author_profile: true
       read_time: true

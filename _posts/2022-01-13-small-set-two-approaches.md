@@ -17,14 +17,14 @@ The notion of “smallness” in measure theory is pretty clear - when the set h
 </figure>
 
 
-I introduce you to the Baire Category theorem - a topological way to define the notion of “smallness” of a set:
+I introduce you Baire Category theorem - a topological way to define the notion of “smallness” of a set:
 
 > A set $E \subset X$ is of the **first category** in $X$ if $E$ is a countable union of nowhere dense sets in $X$. A set of the first category is sometimes said to be “meager.” A set $E$ that is not of the first category in $X$ is referred to as being of the **second category** in $X$. 
 
 A set $E \subset X$ is defined to be **generic** if its complement is of the first category.
 > 
 
-Even though both define the notion of smallness of a set, they do not imply each other. In fact, there is no link between the two. As Stein and Shakarchi says in their functional analysis book: 
+Even though both measure function and Baire category theorem define the notion of smallness of a set, they do not imply each other. In fact, there is no link between the two. As Stein and Shakarchi says in their functional analysis book: 
 
 > In general relying on one’s intuition about the category of sets requires a little caution. For instance, there is no link between this notion and that of Lebesgue measure. Indeed, there are sets in $[0, 1]$ of the first category that are of full measure, and hence uncountable and dense. By the same token, there are generic sets of measure zero.
 > 

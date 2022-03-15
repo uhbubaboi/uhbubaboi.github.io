@@ -75,11 +75,11 @@ The above two definitions also rely on metric spaces. However, unlike $\delta\te
 
 ### Continuity with different degree of constraints
 
-Clearly there are lots of definitions of continuity but there is a good reason for it. Some continuity conditions are ***stronger*** than others. For instance, uniform continuity is a defines continuity on a set as opposed to point-wise continuity that defines it on a single point. Similarly, Lipschitz continuity and holder condition are both *global* property with very strict condition that all pairs satisfy the bound. Additionally, each definition has its own unique constraints which were created to prove other theorems. 
+Clearly there are lots of definitions of continuity but there is a good reason for it. Some continuity conditions are ***stronger*** than others. For instance, uniform continuity is a defines continuity on a set as opposed to point-wise continuity that defines it on a single point. Similarly, Lipschitz continuity and holder condition are both *global* property with very strict condition that all pairs satisfy the bound. 
 
-### Continuity preserves topological structure!
+<!-- ### Continuity preserves topological structure!
 
-Recall that a metric induces a topology. If an operator is continuous, then by the definition of a topological continuity, the open sets are preserved and the topological structure of an image remains intact(?). 
+Recall that a metric induces a topology. If an operator is continuous, then by the definition of a topological continuity, the open sets are preserved and the topological structure of an image remains intact(?). --> 
 
 ## Why topological definition of continuity?
 
