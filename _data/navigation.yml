@@ -9,9 +9,9 @@ main:
 #  - title: "data science"
 #    url: /categories/data-science/
 #    description: "data sciency stuff"
-#  - title: "finance"
-#    url: /categories/finance/
-#    description: "finance stuff"
+  - title: "links"
+    url: /links/
+    description: "useful links"
   - title: "about"
     url: /about/
     description: "me"
