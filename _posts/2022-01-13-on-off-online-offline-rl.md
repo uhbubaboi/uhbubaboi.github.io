@@ -24,23 +24,21 @@ where $d_{\pi}(s)$ is the stationary distribution of Markov chain for $\pi$. The
 
 $$\begin{align*}\nabla_\theta J(\theta) &= \nabla_\theta \sum_{s \in \mathcal{S}} d_{\pi_\theta}(s) \sum_{a \in \mathcal{A}} Q^{\pi_\theta}(s,a) \pi_\theta(a \mid s)\\&\propto \sum_{s \in \mathcal{S}} d_{\pi_\theta}(s) \sum_{a \in \mathcal{A}} Q^{\pi_\theta}(s,a) \nabla_\theta \pi_\theta(a \mid s)\end{align*} \tag{2}$$
 
-If you listen to someone working on reinforcement learning, you often hear them say on-policy reinforcement learning is not data efficient. Again, this is due to the fact that policy gradient requires the gradient from the current policy. Observing the equation above, one can easily see that the gradient $\nabla_\theta J(\theta)$ is a function of $\pi_\theta$. Once we update the policy, we can’t use the gradient from the dataset (i.e. sampled trajectory) we have collected from the past policy. That’s why on every update, we throw away the collected dataset and collect a new one from our newly updated policy.
+If you listen to someone working on reinforcement learning, you often hear them say on-policy reinforcement learning is not data efficient. Again, this is due to the fact that policy gradient requires the gradient of the current policy (observing the equation above, one can easily see that the gradient $\nabla_\theta J(\theta)$ is a function of $\pi_\theta$). Once we update the policy, we can’t use the same policy for our next update. That’s why on every update, we throw away the collected dataset and collect a new one from our newly updated policy.
 
 ## Off-policy
 
 If we use trajectories from both current policy and past policies, then it’s called off-policy. Technically, it should be called “on- and off-policy” since we are using both current policy data and past policy data. But that’s too long to write so we just say off-policy. 
 
-(**Remark** Nobody really called greedy Q learning off-policy, but due to the introduction of policy gradient which can only be computed with current policy, researchers realized they needed to introduce a new term to separate it from the policy gradient learning method.)
-
 ## Offline
 
-Offline is a newly introduced terminology in the reinforcement learning literature. It literally just means we have a set of collected trajectories and we can’t collect more since we don’t have a simulator that created those trajectories. 
+Offline is a newly introduced terminology in the reinforcement learning literature. It literally just means we have a set of collected trajectories that we can use to train our agent but we don’t have a simulator to create more trajectories. 
 
 ## Online
 
 If you have a simulator where your agent can try all possible actions, it is online. 
 
-(**Remark**: No one really says online reinforcement learning since it is always assumed you have a simulator but with the advent of offline reinforcement learning, some people have started to use the term online to make it clear to readers that it is not offline).
+(**Remark**: No one really says online reinforcement learning since we always assume that there is a simulator but with the advent of offline reinforcement learning, some people have started to use the term online to make it clear to their readers that it is not offline).
 
 ## Online/Offline $\perp$ On-policy/Off-policy
 
